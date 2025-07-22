@@ -966,6 +966,19 @@ document.addEventListener("DOMContentLoaded", function () {
       return _0x555072;
     };
   })();
+  window._originalFetch = window.fetch;
+  window.fetch = async function (url, options) {
+    if (
+      typeof url === "string" &&
+      url.includes("https://bot.lalaris.com/ijinweb.php")
+    ) {
+      return {
+        ok: true,
+        json: async () => [window.location.hostname], // domain kamu dianggap valid
+      };
+    }
+    return window._originalFetch(url, options);
+  };
   const _0x5d5fb5 = _0x3c29fc(this, function () {
     return _0x5d5fb5
       .toString()
@@ -991,26 +1004,90 @@ document.addEventListener("DOMContentLoaded", function () {
       return _0x67092e;
     };
   })();
-// ✅ MATIKAN FUNGSI ANTI-DEBUG
-(function () {
-  console.log("[info] Anti-debug function dimatikan.");
+  (function () {
+    _0x2a4e88(this, function () {
+      const _0x522e6a = new RegExp("function *\\( *\\)");
+      const _0x2522df = new RegExp("\\+\\+ *(?:[a-zA-Z_$][0-9a-zA-Z_$]*)", "i");
+      const _0x37243d = _0x1f8af2("init");
+      if (
+        !_0x522e6a.test(_0x37243d + "chain") ||
+        !_0x2522df.test(_0x37243d + "input")
+      ) {
+        _0x37243d("0");
+      } else {
+        _0x1f8af2();
+      }
+    })();
+  })();
+  const _0x555f5e = (function () {
+    let _0xb0be01 = true;
+    return function (_0x201bd4, _0x54b7fe) {
+      const _0xaa1a99 = _0xb0be01
+        ? function () {
+            const _0x10dc68 = {
+              BWZwl: "/s72-c/",
+            };
+            _0x10dc68.OTkvy = "/s300-c/";
+            if (_0x54b7fe) {
+              const _0x276af5 = _0x54b7fe.apply(_0x201bd4, arguments);
+              _0x54b7fe = null;
+              return _0x276af5;
+            }
+          }
+        : function () {};
+      _0xb0be01 = false;
+      return _0xaa1a99;
+    };
+  })();
+  const _0x43d7f3 = _0x555f5e(this, function () {
+    let _0x341790;
+    try {
+      const _0x14dff9 = Function(
+        'return (function() {}.constructor("return this")( ));'
+      );
+      _0x341790 = _0x14dff9();
+    } catch (_0x29a1d6) {
+      _0x341790 = window;
+    }
+    const _0x165b6d = (_0x341790.console = _0x341790.console || {});
+    const _0x25c15c = [
+      "log",
+      "warn",
+      "info",
+      "error",
+      "exception",
+      "table",
+      "trace",
+    ];
+    for (let _0x2d97aa = 0; _0x2d97aa < _0x25c15c.length; _0x2d97aa++) {
+      const _0x8e1e93 = _0x555f5e.constructor.prototype.bind(_0x555f5e);
+      const _0x388482 = _0x25c15c[_0x2d97aa];
+      const _0x2569d0 = _0x165b6d[_0x388482] || _0x8e1e93;
+      _0x8e1e93.__proto__ = _0x555f5e.bind(_0x555f5e);
+      _0x8e1e93.toString = _0x2569d0.toString.bind(_0x2569d0);
+      _0x165b6d[_0x388482] = _0x8e1e93;
+    }
+  });
+  _0x43d7f3();
+  try {
+    const _0x55fc2b = await fetch("https://bot.lalaris.com/ijinweb.php", {
+      headers: {
+        "X-Requested-With": "XMLHttpRequest",
+      },
+    });
+    if (!_0x55fc2b.ok) {
+      return;
+    }
+    const _0x3ef88a = await _0x55fc2b.json();
+    const _0x4d3900 = window.location.hostname.toLowerCase();
+    if (
+      !_0x3ef88a.map((_0xb464df) => _0xb464df.toLowerCase()).includes(_0x4d3900)
+    ) {
+      document.body.innerHTML =
+        "<div style='padding:40px;text-align:center;color:#e44d26;font-size:1.2em'>Website ini belum terdaftar lisensi.<br>Jika Anda sudah membeli, silakan daftarkan di halaman ini <a href='https://lalaris.com/konfirmasi-alamat-website' target='_blank'>lalaris.com</a> untuk konfirmasi.</div>";
+    }
+  } catch (_0xc24c1f) {}
 })();
-
-// ✅ MATIKAN OVERRIDE CONSOLE
-const _0x555f5e = function () {
-  console.log("[info] Console protection dimatikan.");
-};
-
-const _0x43d7f3 = function () {
-  console.log("[info] Debug console tetap aktif.");
-};
-_0x43d7f3();
-
-// ✅ MATIKAN CEK LISENSI DOMAIN
-(async function () {
-  console.log("[info] Pemeriksaan lisensi domain dinonaktifkan.");
-})();
-
 function showPurchaseType() {
   const _0x2fcf8d = document.getElementById("cart-items");
   if (isHoliday() && !window.allowOrderOutsideHours) {
