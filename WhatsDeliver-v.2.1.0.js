@@ -692,6 +692,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 (async function () {
+  return;
+
   const _0x3c29fc = function () {
     let _0x58f9a1 = true;
     return function (_0x96bdab, _0x58ebe9) {
