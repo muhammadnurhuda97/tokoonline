@@ -1056,24 +1056,24 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
   _0x43d7f3();
-  try {
-    const _0x55fc2b = await fetch("https://bot.lalaris.com/ijinweb.php", {
-      headers: {
-        "X-Requested-With": "XMLHttpRequest",
-      },
-    });
-    if (!_0x55fc2b.ok) {
-      return;
-    }
-    const _0x3ef88a = await _0x55fc2b.json();
-    const _0x4d3900 = window.location.hostname.toLowerCase();
-    if (
-      !_0x3ef88a.map((_0xb464df) => _0xb464df.toLowerCase()).includes(_0x4d3900)
-    ) {
-      document.body.innerHTML =
-        "<div style='padding:40px;text-align:center;color:#e44d26;font-size:1.2em'>Website ini belum terdaftar lisensi.<br>Jika Anda sudah membeli, silakan daftarkan di halaman ini <a href='https://lalaris.com/konfirmasi-alamat-website' target='_blank'>lalaris.com</a> untuk konfirmasi.</div>";
-    }
-  } catch (_0xc24c1f) {}
+//   try {
+//     const _0x55fc2b = await fetch("https://bot.lalaris.com/ijinweb.php", {
+//       headers: {
+//         "X-Requested-With": "XMLHttpRequest",
+//       },
+//     });
+//     if (!_0x55fc2b.ok) {
+//       return;
+//     }
+//     const _0x3ef88a = await _0x55fc2b.json();
+//     const _0x4d3900 = window.location.hostname.toLowerCase();
+//     if (
+//       !_0x3ef88a.map((_0xb464df) => _0xb464df.toLowerCase()).includes(_0x4d3900)
+//     ) {
+//       document.body.innerHTML =
+//         "<div style='padding:40px;text-align:center;color:#e44d26;font-size:1.2em'>Website ini belum terdaftar lisensi.<br>Jika Anda sudah membeli, silakan daftarkan di halaman ini <a href='https://lalaris.com/konfirmasi-alamat-website' target='_blank'>lalaris.com</a> untuk konfirmasi.</div>";
+//     }
+//   } catch (_0xc24c1f) {}
 })();
 function showPurchaseType() {
   const _0x2fcf8d = document.getElementById("cart-items");
