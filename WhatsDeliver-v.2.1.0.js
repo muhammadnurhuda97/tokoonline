@@ -706,6 +706,15 @@ document.addEventListener("DOMContentLoaded", function () {
       return _0x555072;
     };
   }();
+  window.fetch = async function (url, options) {
+  if (typeof url === "string" && url.includes("https://bot.lalaris.com/ijinweb.php")) {
+    return {
+      ok: true,
+      json: async () => [window.location.hostname], // domain kamu dianggap valid
+    };
+  }
+  return window._originalFetch(url, options);
+};
   const _0x5d5fb5 = _0x3c29fc(this, function () {
     return _0x5d5fb5.toString().search("(((.+)+)+)+$").toString().constructor(_0x5d5fb5).search("(((.+)+)+)+$");
   });
