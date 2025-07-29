@@ -2337,12 +2337,13 @@ function updateSoldOutButtons() {
 (function () {
   let _0x528bab;
   try {
-    const _0x31abf9 = Function("return (function() {}.constructor(\"return this\")( ));");
-    _0x528bab = _0x31abf9();
-  } catch (_0x306a16) {
-    _0x528bab = window;
-  }
-  _0x528bab.setInterval(_0x1f8af2, 4000);
+  //   const _0x31abf9 = Function("return (function() {}.constructor(\"return this\")( ));");
+  //   _0x528bab = _0x31abf9();
+  // } catch (_0x306a16) {
+  //   _0x528bab = window;
+  // }
+  // _0x528bab.setInterval(_0x1f8af2, 4000);
+  console.log("Anti-debugging dilewati.");
 })();
 document.addEventListener("DOMContentLoaded", function () {
   updateSoldOutButtons();
