@@ -2342,7 +2342,8 @@ function updateSoldOutButtons() {
   } catch (_0x306a16) {
     _0x528bab = window;
   }
-  _0x528bab.setInterval(_0x1f8af2, 4000);
+  // _0x528bab.setInterval(_0x1f8af2, 4000);
+  console.log("Anti-debugging dilewati.");
 })();
 document.addEventListener("DOMContentLoaded", function () {
   updateSoldOutButtons();
