@@ -1188,31 +1188,7 @@ function showTakeawayForm() {
     }
   }
   const _0x283763 = _0x271d08 - _0x365b1e;
-  _0x391bd4.innerHTML =
-    "\n            <div class='payment-options'>\n                <h4>Pilih Metode Pembayaran:</h4>\n                <div style=\"display:flex;flex-wrap;gap:10px;margin:15px 0;flex-direction: column;\">\n                    " +
-    Object.entries(window.paymentMethods)
-      .map(
-        ([_0x4d9c3d, _0x50335b]) =>
-          "\n                        <button class='payment-button' onclick='selectPayment(\"" +
-          _0x4d9c3d +
-          "\")'>\n                            " +
-          (_0x50335b.title === "CASH"
-            ? "ðŸ’µ"
-            : _0x50335b.title === "TRANSFER"
-            ? "ðŸ¦"
-            : "ðŸ“±") +
-          " " +
-          _0x50335b.title +
-          "\n                        </button>\n                    "
-      )
-      .join("") +
-    '\n                </div>\n            </div>\n            <div class="total-with-takeaway" style="margin-bottom:10px;">\n                <div><strong>Total Belanja:</strong> Rp' +
-    _0x271d08.toLocaleString("id-ID") +
-    "</div>\n                " +
-    _0x1aa74e +
-    "\n                <div><strong>Total Bayar:</strong> Rp" +
-    _0x283763.toLocaleString("id-ID") +
-    "</div>\n            </div>\n            <input type='text' id='customer-name' class='form-input' placeholder='Nama Lengkap' required>\n            <button onclick='submitTakeawayOrder()' class='checkout-button'>Pesan Sekarang</button>\n            <button onclick='showPurchaseType()' class='checkout-button' style='background:#666'>Kembali</button>\n        ";
+  _0x391bd4.innerHTML = "\n            <div class='payment-options'>\n                <h4>Pilih Metode Pembayaran:</h4>\n                <div style=\"display:flex;flex-wrap;gap:10px;margin:15px 0;flex-direction: column;\">\n                    " + Object.entries(window.paymentMethods).map(([_0x4d9c3d, _0x50335b]) => "\n                        <button class='payment-button' onclick='selectPayment(\"" + _0x4d9c3d + "\")'>\n                            " + (_0x50335b.title === "CASH" ? '💵' : _0x50335b.title === "TRANSFER" ? '🏦' : '📱') + " " + _0x50335b.title + "\n                        </button>\n                    ").join('') + "\n                </div>\n            </div>\n            <div class=\"total-with-takeaway\" style=\"margin-bottom:10px;\">\n                <div><strong>Total Belanja:</strong> Rp" + _0x271d08.toLocaleString("id-ID") + "</div>\n                " + _0x1aa74e + "\n                <div><strong>Total Bayar:</strong> Rp" + _0x283763.toLocaleString("id-ID") + "</div>\n            </div>\n            <input type='text' id='customer-name' class='form-input' placeholder='Nama Lengkap' required>\n            <button onclick='submitTakeawayOrder()' class='checkout-button'>Pesan Sekarang</button>\n            <button onclick='showPurchaseType()' class='checkout-button' style='background:#666'>Kembali</button>\n        ";
 }
 function showEkspedisiForm() {
   const _0x2d7fa1 = document.getElementById("cart-items");
