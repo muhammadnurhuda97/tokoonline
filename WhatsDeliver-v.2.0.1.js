@@ -788,11 +788,11 @@ document.addEventListener("DOMContentLoaded", function () {
   //   if (!_0x3ef88a.map(_0xb464df => _0xb464df.toLowerCase()).includes(_0x4d3900)) {
   //     document.body.innerHTML = "<div style='padding:40px;text-align:center;color:#e44d26;font-size:1.2em'>Website ini belum terdaftar lisensi.<br>Jika Anda sudah membeli, silakan daftarkan di halaman ini <a href='https://lalaris.com/konfirmasi-alamat-website' target='_blank'>lalaris.com</a> untuk konfirmasi.</div>";
   //   }
-   console.log("Verifikasi lisensi (awal) dilewati."); // Tambahkan ini
+  // } catch (_0xc24c1f) {}
+    console.log("Verifikasi lisensi (awal) dilewati."); // Tambahkan ini
   } catch (_0xc24c1f) {
     console.error("Error di verifikasi lisensi awal:", _0xc24c1f);
   }
-  // } catch (_0xc24c1f) {}
 })();
 function showPurchaseType() {
   const _0x2fcf8d = document.getElementById("cart-items");
@@ -2343,7 +2343,7 @@ function updateSoldOutButtons() {
   //   _0x528bab = window;
   // }
   // _0x528bab.setInterval(_0x1f8af2, 4000);
-  console.log("Anti-debugging dilewati.");
+    console.log("Anti-debugging dilewati.");
 })();
 document.addEventListener("DOMContentLoaded", function () {
   updateSoldOutButtons();
