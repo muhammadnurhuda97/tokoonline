@@ -2259,7 +2259,7 @@ function submitDeliveryOrder() {
   }
   const _0x31793d = window.paymentMethods[window.selectedPayment];
   const _0x43cc8c = _0x6ccf2b ? formatTanggalIndonesia(_0x6ccf2b) : "";
-  const _0x48271b = _0x157f1e ? _0x1416f1 : "";
+  const _0x48271b = _0x157f1e ? formatJam24(_0x157f1e) : "";
   const _0x3e7d50 = cart.reduce(
     (_0x2070ee, _0x894b0c) => _0x2070ee + _0x894b0c.totalPrice,
     0
