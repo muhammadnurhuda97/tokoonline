@@ -2817,7 +2817,7 @@ function showCart() {
         _0x19780e +
         ', 1)" class="qty-btn">+</button>\n                            <button onclick="removeItem(' +
         _0x19780e +
-        ')" class="remove-btn">Ã—</button>\n                        </div>\n                    </div>\n                ';
+        ')" class="remove-btn">\xD7</button>\n                        </div>\n                    </div>\n                ';
       const _0x126d0d = document.createElement("div");
       _0x126d0d.className = "item-subtotal";
       _0x126d0d.innerHTML =
