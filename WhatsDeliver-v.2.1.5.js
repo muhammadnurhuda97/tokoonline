@@ -3528,7 +3528,7 @@ document.addEventListener("DOMContentLoaded", function () {
   _0x46da1c.id = _0x5b4bc0.bSDtQ;
   _0x46da1c.style = _0x5b4bc0.IHqVU;
   _0x46da1c.innerHTML =
-    '\n        <button id="notif-popup-close" style="position:absolute;top:10px;right:10px;width:32px;height:32px;border:none;background:#666;color:#fff;border-radius:50%;font-size:18px;line-height:32px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2;">Ã—</button>\n        <h3 style="color:#e44d26;margin-bottom:12px;">' +
+    '\n        <button id="notif-popup-close" style="position:absolute;top:10px;right:10px;width:32px;height:32px;border:none;background:#666;color:#fff;border-radius:50%;font-size:18px;line-height:32px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2;">×</button>\n        <h3 style="color:#e44d26;margin-bottom:12px;">' +
     (window.notifPopupConfig.title || _0x5b4bc0.DWZTr) +
     '</h3>\n        <div style="font-size:15px;margin-bottom:18px;">' +
     (window.notifPopupConfig.message || "") +
